@@ -1,0 +1,17 @@
+# /etc/systemd/system/minecraft-server.service
+
+[Unit]
+Description=Minecraft Bedrock Server
+After=network.target
+
+[Service]
+WorkingDirectory=/home/larsv/minecraft-bedrock
+ExecStart=/home/larsv/minecraft-bedrock/bedrock_server
+Restart=always
+MemoryMax=8G
+CPUQuota=75%
+Nice=10
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target
