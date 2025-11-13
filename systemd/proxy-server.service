@@ -1,0 +1,12 @@
+[Unit]
+Description=Phantom Minecraft LAN proxy
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ubuntu/phantom-linux-arm64
+ExecStart=/home/ubuntu/phantom -server minecraft.larsverschoor.nl:19132
+Restart=always
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target

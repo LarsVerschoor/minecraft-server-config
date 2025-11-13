@@ -13,7 +13,7 @@ WorkingDirectory=/home/larsv/minecraft-bedrock
 ExecStart=/home/larsv/minecraft-bedrock/bedrock_server
 Restart=always
 MemoryMax=8G
-CPUQuota=75%
+CPUQuota=100%
 Nice=10
 LimitNOFILE=4096
 
