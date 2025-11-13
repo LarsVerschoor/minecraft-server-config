@@ -1,4 +1,8 @@
-# /etc/systemd/system/minecraft-server.service
+# sudo cp minecraft-server-config/systemd/minecraft-server.service /etc/systemd/system/
+# sudo systemctl daemon-reload
+# sudo systemctl enable minecraft-server
+# sudo reboot
+# sudo systemctl status minecraft-server
 
 [Unit]
 Description=Minecraft Bedrock Server
